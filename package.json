@@ -1,0 +1,21 @@
+{
+  "name": "flaky-test-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "flaky": "flaky-tests reports/latest.json",
+    "check": "npm test && npm run flaky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "flaky-test": "^1.0.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
